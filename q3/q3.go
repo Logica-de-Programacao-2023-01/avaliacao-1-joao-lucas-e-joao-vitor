@@ -16,7 +16,7 @@ import "fmt"
 
 func DominoPieces(m, n int) (int, error) {
 	var quantidadepecas int
-	if m == 0 || n == 0 {
+	if m <= 0 || n <= 0 {
 		return 0, fmt.Errorf("Medidas inválidas")
 	}
 	quadrados := m * n
