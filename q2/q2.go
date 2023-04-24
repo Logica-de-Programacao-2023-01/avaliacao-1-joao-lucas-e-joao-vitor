@@ -1,5 +1,7 @@
 package q2
 
+import "fmt"
+
 //Um dia, três melhores amigos - Pedro, Vanessa e Tônia - decidiram formar uma equipe e participar de concursos de
 //programação. Os participantes geralmente recebem vários problemas durante esses concursos. Muito antes do início, os
 //amigos decidiram que implementariam um problema somente se pelo menos dois deles tivessem certeza da solução. Caso
@@ -13,6 +15,21 @@ package q2
 //Ajude os amigos a encontrar o número de problemas para os quais eles escreverão uma solução.
 
 func ProblemsSolved(answers [][3]bool) int {
-	// Seu código aqui
-	return 0
+	var contagem, problemas int
+	for x := 0; x < len(answers); x++ {
+		contagem = 0
+		if answers[0][x] == true {
+			contagem++
+		}
+		if answers[1][x] == true {
+			contagem++
+		}
+		if answers[2][x] == true {
+			contagem++
+		}
+		if contagem >= 2 {
+			problemas++
+		}
+	}
+	return problemas
 }
