@@ -1,5 +1,7 @@
 package q4
 
+import "fmt"
+
 //Uma loja virtual de roupas recebeu várias listas de produtos vendidos em diferentes dias da semana. O dono da loja
 //deseja analisar as listas para entender melhor o comportamento de suas vendas. Para isso, ele precisa classificar cada
 //lista como em ordem crescente, decrescente ou aleatória, de acordo com o preço dos produtos.
