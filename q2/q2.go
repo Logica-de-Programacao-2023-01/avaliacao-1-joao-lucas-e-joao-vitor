@@ -17,13 +17,13 @@ func ProblemsSolved(answers [][3]bool) int {
 	var contagem, problemas int
 	for x := 0; x < len(answers); x++ {
 		contagem = 0
-		if answers[0][x] == true {
+		if answers[x][0] == true {
 			contagem++
 		}
-		if answers[1][x] == true {
+		if answers[x][1] == true {
 			contagem++
 		}
-		if answers[2][x] == true {
+		if answers[x][2] == true {
 			contagem++
 		}
 		if contagem >= 2 {
