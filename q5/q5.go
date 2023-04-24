@@ -19,8 +19,6 @@ import "fmt"
 func ProcessString(s string) string {
 	var textosemvogal, textopontos string
 	vogais := "aeiouAEIOU"
-	fmt.Print("Esceva uma frase: ")
-	fmt.Scan(&s)
 	for _, char := range s {
 		if !strings.ContainsRune(vogais, char) {
 			textosemvogal += string(char)
